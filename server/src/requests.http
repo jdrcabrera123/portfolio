@@ -1,0 +1,30 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullname": "dfsdfgdsf MEddfgdsficci",
+    "email": "clau@cladsfsdfsdsdis.com",
+    "mobile": 654987,
+    "requirement": "I am tsdfsdgdsesting this database"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/642b91a7a730007de4438602 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/642b91a7a730007de4438602 HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullname": "Yosimar",
+    "email": "yosimar@yosimar.com",
+    "mobile": 2123123,
+    "information": "I need to design a new site with yosimar's brand"
+}
+
+###
+DELETE http://localhost:9000/api/users/642b91a7a730007de4438602 HTTP/1.1
