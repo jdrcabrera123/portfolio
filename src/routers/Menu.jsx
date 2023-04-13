@@ -7,6 +7,8 @@ import Modeling3d from "../components/Modeling3d";
 import Programming from "../components/Programming";
 
 export default function Menu() {
+  
+  
   const navMenu = () => {
     const menu_toggle = document.querySelector(".x-Btn");
     const menu = document.querySelector(".menu");
@@ -15,14 +17,18 @@ export default function Menu() {
     menu_toggle.classList.toggle("active");
     menu.classList.toggle("active");
     navigation.classList.toggle("active");
-    // navigation.classList.remove('active')
+    
   };
 
   const hideMenu = () => {
     const navigationHide = document.querySelector(".nav");
+    const menu_toggle = document.querySelector(".x-Btn");
     // const LiHide = document.querySelector
     navigationHide.classList.remove("active");
+    menu_toggle.classList.remove("active");
   };
+
+  
 
   return (
     <>
