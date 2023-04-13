@@ -1,10 +1,10 @@
 @font-face {
   font-family: textBlack;
-  src: url("./assets/fonts/Dmitry Rastvortsev - KyivType Sans ");
+  src: url("/src/assets/fonts/Dmitry Rastvortsev - KyivType Sans Regular-.otf");
 }
 @font-face {
   font-family: titles;
-  src: url("./assets/fonts/glimmer of light.otf");
+  src: url("/src/assets/fonts/glimmer of light.otf");
 }
 :root {
   --colour-red: #db0f00;
