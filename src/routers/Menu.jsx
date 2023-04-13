@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, NavLink, BrowserRouter } from "react-router-dom";
+import { Routes, Route, NavLink, BrowserRouter, HashRouter } from "react-router-dom";
 import Animation from "../components/Animation";
 import Home from "../components/Home";
 import Illustration from "../components/Illustration";
@@ -26,7 +26,7 @@ export default function Menu() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <header>
           <div className="menuBtn">
             <div className="x-Btn" onClick={navMenu}></div>
@@ -89,7 +89,7 @@ export default function Menu() {
             </Route>
           </Routes>
         </section>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
