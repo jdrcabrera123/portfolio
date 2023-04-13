@@ -3,10 +3,6 @@
   src: url("./assets/fonts/Dmitry Rastvortsev - KyivType Sans ");
 }
 @font-face {
-  font-family: redText;
-  src: url("./assets/fonts/Dmitry Rastvortsev - KyivType Sans Heavy-.otf");
-}
-@font-face {
   font-family: titles;
   src: url("./assets/fonts/glimmer of light.otf");
 }
@@ -153,9 +149,8 @@ header .nav .menu li a.activated {
   z-index: 2;
 }
 .home p span {
-  font-family: var(--redText);
   color: var(--colour-red);
-  line-height: 40px;
+  line-height: 24px;
 }
 .home .letsTalk {
   margin-top: 5%;
@@ -656,6 +651,9 @@ header .nav .menu li a.activated {
     line-height: 60px;
     margin: auto;
   }
+  .home p span {
+    font-size: 32px;
+  }
   .home .gaussianOne {
     width: 200px;
     height: 200px;
@@ -763,6 +761,9 @@ header .nav .menu li a.activated {
     line-height: 70px;
     margin: auto;
   }
+  .home p span {
+    font-size: 37px;
+  }
   .home .gaussianOne {
     width: 250px;
     height: 250px;
@@ -809,6 +810,9 @@ header .nav .menu li a.activated {
     font-size: 45px;
     margin: auto;
     line-height: 90px;
+  }
+  .home p span {
+    font-size: 47px;
   }
   .home .gaussianOne {
     width: 270px;

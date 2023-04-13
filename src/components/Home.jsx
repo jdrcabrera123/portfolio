@@ -14,7 +14,7 @@ export default function Home() {
       <section className="home">
         <p>
           I love <span>endowing life</span> to my <span>creations</span> and{" "}
-          <span>designs</span> . <span>Programming</span> is the way to connect
+          <span>designs</span>. <span>Programming</span> is the way to connect
           my <span> ideas</span> with people <span> interaction</span>.
         </p>
         <div className="gaussianOne"></div>

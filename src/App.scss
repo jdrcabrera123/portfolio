@@ -2,10 +2,7 @@
   font-family: textBlack;
   src: url("./assets/fonts/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ ");
 }
-@font-face {
-  font-family: redText;
-  src: url("./assets/fonts/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Heavy-.otf");
-}
+
 @font-face {
   font-family: titles;
   src: url("./assets/fonts/glimmer\ of\ light.otf");
@@ -156,9 +153,8 @@ header {
     position: relative;
     z-index: 2;
     span {
-      font-family: var(--redText);
       color: var(--colour-red);
-      line-height: 40px;
+      line-height: 24px;
     }
   }
   .letsTalk {
@@ -716,6 +712,9 @@ header {
       font-size: 30px;
       line-height: 60px;
       margin: auto;
+      span {
+        font-size: 32px;
+      }
       // background-color: pink;
     }
     .gaussianOne {
@@ -845,12 +844,15 @@ header {
       font-size: 35px;
       line-height: 70px;
       margin: auto;
+      span {
+        font-size: 37px;
+      }
       // background-color: blue;
     }
     .gaussianOne {
       width: 250px;
       height: 250px;
-filter: blur(80px);
+      filter: blur(80px);
       animation: blurMovement 6s infinite;
     }
     @keyframes blurMovement {
@@ -900,11 +902,14 @@ filter: blur(80px);
       margin: auto;
       // background-color: green;
       line-height: 90px;
+      span {
+        font-size: 47px;
+      }
     }
     .gaussianOne {
       width: 270px;
       height: 270px;
-filter: blur(80px);
+      filter: blur(80px);
       animation: blurMovement 6s infinite;
     }
     @keyframes blurMovement {
@@ -994,7 +999,7 @@ filter: blur(80px);
     .gaussianOne {
       width: 400px;
       height: 400px;
-filter: blur(150px);
+      filter: blur(150px);
       animation: blurMovement 8s infinite;
     }
     @keyframes blurMovement {
