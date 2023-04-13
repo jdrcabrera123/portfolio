@@ -14,7 +14,6 @@
   --colour-bgTextArea: #f2f2f2;
   --textBlack: textBlack;
   --titles: titles;
-  --redText: redText;
 }
 
 * {
@@ -349,7 +348,7 @@ header .nav .menu li a.activated {
   line-height: 45px;
 }
 .contact p span {
-  font-family: var(--redText);
+  font-family: var(--textBlack);
   color: var(--colour-red);
   line-height: 40px;
 }

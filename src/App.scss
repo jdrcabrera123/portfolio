@@ -16,7 +16,6 @@
   --colour-bgTextArea: #f2f2f2;
   --textBlack: textBlack;
   --titles: titles;
-  --redText: redText;
 }
 //---------------------- Universals
 * {
@@ -374,7 +373,7 @@ header {
   }
   p {
     span {
-      font-family: var(--redText);
+      font-family: var(--textBlack);
       color: var(--colour-red);
       line-height: 40px;
     }
