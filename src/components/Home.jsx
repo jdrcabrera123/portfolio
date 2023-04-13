@@ -3,12 +3,14 @@ import Contact from "./Contact";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import ProgrammingUxUi from "./ProgrammingUxUi";
+import { HashLink as Link } from "react-router-hash-link";
 
 // import { links } from "../api/links";
 
 export default function Home() {
   return (
     <>
+    
       <section className="home">
         <p>
           I love <span>endowing life</span> to my <span>creations</span> and{" "}
@@ -17,7 +19,7 @@ export default function Home() {
         </p>
         <div className="gaussianOne"></div>
         <div id="letsTalk" className="letsTalk">
-          <a href="#contact">Let's Talk</a>
+          <Link to="#contact" smooth>Let's Talk</Link>
           {/* {menuLinks.map((link) => {
             return <a href={link.url} key={link.id}>{link.text}</a>;
           })} */}
