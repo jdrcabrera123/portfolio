@@ -6,7 +6,7 @@ export default function SliderHomePage() {
       <div className="cardBoxHome">
         <div className="slideCard">
           <div className="imgIn"></div>
-          <h2 className="titleCard">Project Name</h2>
+          <h2 className="titleCard">Portfolio</h2>
           <p className="descriptionCard"> react, mongoDB, node</p>
           <button className="btnWatch">
             <a href="">Watch</a>
