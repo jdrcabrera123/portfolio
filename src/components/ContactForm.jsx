@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 export default function ContactForm() {
   const [fullname, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -70,7 +70,9 @@ export default function ContactForm() {
           onChange={(e) => setRequirement(e.target.value)}
         ></textarea>
         <input type="submit" name="sendMessage" id="" value="Send" />
+        <Link to={"/register"} className="validateUser">Validate user</Link>
       </form>
+     
     </>
   );
 }

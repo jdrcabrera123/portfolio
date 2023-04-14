@@ -5,6 +5,7 @@ import Home from "../components/Home";
 import Illustration from "../components/Illustration";
 import Modeling3d from "../components/Modeling3d";
 import Programming from "../components/Programming";
+import Login from "../components/Login";
 
 export default function Menu() {
   
@@ -92,6 +93,7 @@ export default function Menu() {
               <Route path="/animation" element={<Animation />} />
               <Route path="/illustration" element={<Illustration />} />
               <Route path="/3dmodeling" element={<Modeling3d />} />
+              <Route path="/register" element={<Login />} />
             </Route>
           </Routes>
         </section>

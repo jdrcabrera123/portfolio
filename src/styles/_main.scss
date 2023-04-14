@@ -16,6 +16,7 @@
   --colour-bgTextArea: #f2f2f2;
   --textBlack: textBlack;
   --titles: titles;
+  --border: #bdbcbc;
 }
 //---------------------- Universals
 * {
@@ -267,7 +268,7 @@ header {
     }
   }
 
-  .cardBox {
+  .cardBoxHome {
     margin: auto;
     width: 320px;
     height: 480px;
@@ -275,7 +276,6 @@ header {
     .slideCard {
       width: 320px;
       height: 480px;
-      background-color: blue;
       margin: auto;
       background-color: white;
       width: 100%;
@@ -292,7 +292,7 @@ header {
       .imgIn {
         width: 280px;
         height: 280px;
-        background-image: url(./assets/img/Old_Candle.png);
+        background-image: url(../assets/img/portfolio.png);
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
       }
 
@@ -319,6 +319,11 @@ header {
           letter-spacing: 5px;
           transform: translateY(5px);
           cursor: pointer;
+        }
+        a {
+          font-family: var(--titles);
+          color: var(--colour-yellow);
+          text-decoration: none;
         }
       }
     }
@@ -429,6 +434,11 @@ header {
       cursor: pointer;
     }
   }
+  .validateUser{
+    font-family: var(--textBlack);
+    text-decoration: none;
+    color: var(--colour-red);
+  }
 }
 
 //---------------------- Footer area
@@ -487,8 +497,12 @@ header {
       .imgIn {
         width: 280px;
         height: 280px;
-        background-image: url(./assets/img/Old_Candle.png);
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+        border-radius: 5px;
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
       }
 
       .titleCard {
@@ -514,6 +528,11 @@ header {
           cursor: pointer;
           letter-spacing: 5px;
           transform: translateY(5px);
+        }
+        a {
+          font-family: var(--titles);
+          color: var(--colour-yellow);
+          text-decoration: none;
         }
       }
     }
@@ -646,7 +665,7 @@ header {
       .imgIn {
         width: 280px;
         height: 280px;
-        background-image: url(./assets/img/m1.png);
+        background-image: url(../assets/img/m1.png);
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
       }
 
@@ -683,6 +702,52 @@ header {
   img {
     border-radius: 5px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.365);
+  }
+}
+
+.userForm {
+  margin: auto;
+  margin-top: 50px;
+  //   background-color: red;
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.301);
+
+  form {
+    // background-color: red;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    input {
+      background-color: var(--colour-bgTextArea);
+      height: 50px;
+      width: 255px;
+      padding: 20px;
+      border: 1px solid black;
+      font-size: 20px;
+      font-family: var(--textBlack);
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.462);
+    }
+    button {
+      background-color: var(--colour-blue);
+      color: var(--colour-yellow);
+      font-family: var(--titles);
+      font-size: 20px;
+      letter-spacing: 2px;
+      width: 100px;
+      height: 50px;
+      transition: 0.25s;
+      &:hover {
+        letter-spacing: 5px;
+        transform: translateY(5px);
+        cursor: pointer;
+      }
+    }
   }
 }
 @media screen and (min-width: 365px) {

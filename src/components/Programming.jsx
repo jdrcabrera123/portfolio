@@ -1,56 +1,27 @@
 import React from "react";
+import {programmingCards} from "../api/programingCards"
 
 export default function Programming() {
   return (
-    <div className="containerProgrammingCards">
-      <div className="cardBoxProgramming">
-        <div className="slideCard">
-          <div className="imgIn"></div>
-          <h2 className="titleCard">Project Name</h2>
-          <p className="descriptionCard">Html, css, js</p>
-          <button className="btnWatch">Watch</button>
+    <section className="containerProgrammingCards">
+    {programmingCards.map((itemProgrammingCard) => {
+      return (
+        <div className="cardBoxProgramming" key={itemProgrammingCard.id}>
+          <div className="slideCard">
+            <div className="imgIn">
+              <img src={itemProgrammingCard.image} alt="" />
+            </div>
+            <h2 className="titleCard">{itemProgrammingCard.title}</h2>
+            <p className="descriptionCard">{itemProgrammingCard.description}</p>
+            <button className="btnWatch">
+              <a href={itemProgrammingCard.url} target="_blank">
+                Watch
+              </a>
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="cardBoxProgramming">
-        <div className="slideCard">
-          <div className="imgIn"></div>
-          <h2 className="titleCard">Project Name</h2>
-          <p className="descriptionCard">Html, css, js</p>
-          <button className="btnWatch">Watch</button>
-        </div>
-      </div>
-      <div className="cardBoxProgramming">
-        <div className="slideCard">
-          <div className="imgIn"></div>
-          <h2 className="titleCard">Project Name</h2>
-          <p className="descriptionCard">Html, css, js</p>
-          <button className="btnWatch">Watch</button>
-        </div>
-      </div>
-      <div className="cardBoxProgramming">
-        <div className="slideCard">
-          <div className="imgIn"></div>
-          <h2 className="titleCard">Project Name</h2>
-          <p className="descriptionCard">Html, css, js</p>
-          <button className="btnWatch">Watch</button>
-        </div>
-      </div>
-      <div className="cardBoxProgramming">
-        <div className="slideCard">
-          <div className="imgIn"></div>
-          <h2 className="titleCard">Project Name</h2>
-          <p className="descriptionCard">Html, css, js</p>
-          <button className="btnWatch">Watch</button>
-        </div>
-      </div>
-      <div className="cardBoxProgramming">
-        <div className="slideCard">
-          <div className="imgIn"></div>
-          <h2 className="titleCard">Project Name</h2>
-          <p className="descriptionCard">Html, css, js</p>
-          <button className="btnWatch">Watch</button>
-        </div>
-      </div>
-    </div>
+      );
+    })}
+  </section>
   );
 }
