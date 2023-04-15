@@ -153,9 +153,10 @@ header {
   );
   width: 100%;
   height: auto;
-  padding: 20px 40px;
+  padding: 50px 40px;
   font-size: 22px;
   position: relative;
+  line-height: 42px;
   p {
     position: relative;
     z-index: 2;
@@ -480,17 +481,17 @@ header {
 
 //<<<<<<<<<<<<<<<<< Programming Section>>>>>>>>>
 .containerProgrammingCards {
-  padding: 50px 5%;
-  width: 100%;
+  padding: 50px 10%;
+  width: 95%;
   // background-color: red;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 
   .cardBoxProgramming {
-    margin: auto;
+    margin: 5px;
     width: 320px;
     height: 480px;
     // background-color: green;
@@ -558,16 +559,17 @@ header {
 //<<<<<<<<<<<<<<<<< Animation Section>>>>>>>>>
 .containerAnimationCards {
   padding: 50px 5%;
-  width: 100%;
+  width: 95%;
+  margin: auto;
   // background-color: blue;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 
   .cardBoxAnimation {
-    margin: auto;
+    margin: 5px;
     width: 320px;
     height: 480px;
     // background-color: green;
