@@ -1,5 +1,11 @@
-import React from "react";
-import { Routes, Route, NavLink, BrowserRouter, HashRouter } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import {
+  Routes,
+  Route,
+  NavLink,
+  BrowserRouter,
+  HashRouter,
+} from "react-router-dom";
 import Animation from "../components/Animation";
 import Home from "../components/Home";
 import Illustration from "../components/Illustration";
@@ -8,8 +14,20 @@ import Programming from "../components/Programming";
 import Login from "../components/Login";
 
 export default function Menu() {
-  
-  
+  const [showMenu, setShowMenu] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const threshold = 10; // adjust as needed
+
+    setShowMenu(scrollTop <= threshold);
+  };
+
   const navMenu = () => {
     const menu_toggle = document.querySelector(".x-Btn");
     const menu = document.querySelector(".menu");
@@ -18,7 +36,6 @@ export default function Menu() {
     menu_toggle.classList.toggle("active");
     menu.classList.toggle("active");
     navigation.classList.toggle("active");
-    
   };
 
   const hideMenu = () => {
@@ -29,8 +46,6 @@ export default function Menu() {
     menu_toggle.classList.remove("active");
   };
 
-  
-
   return (
     <>
       <HashRouter>
@@ -38,51 +53,52 @@ export default function Menu() {
           <div className="menuBtn">
             <div className="x-Btn" onClick={navMenu}></div>
           </div>
-
-          <nav className="nav">
-            <ul className="menu">
-              <li className="hideLink" onClick={hideMenu}>
-                <NavLink
-                  to="/home"
-                  className={({ isActive }) => (isActive ? "activated" : "")}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="hideLink" onClick={hideMenu}>
-                <NavLink
-                  to="/programming"
-                  className={({ isActive }) => (isActive ? "activated" : "")}
-                >
-                  Programming
-                </NavLink>
-              </li>
-              <li className="hideLink" onClick={hideMenu}>
-                <NavLink
-                  to="/animation"
-                  className={({ isActive }) => (isActive ? "activated" : "")}
-                >
-                  Animation
-                </NavLink>
-              </li>
-              <li className="hideLink" onClick={hideMenu}>
-                <NavLink
-                  to="/illustration"
-                  className={({ isActive }) => (isActive ? "activated" : "")}
-                >
-                  Illustration
-                </NavLink>
-              </li>
-              <li className="hideLink" onClick={hideMenu}>
-                <NavLink
-                  to="/3dmodeling"
-                  className={({ isActive }) => (isActive ? "activated" : "")}
-                >
-                  3D
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+          {showMenu && (
+            <nav className="nav">
+              <ul className="menu">
+                <li className="hideLink" onClick={hideMenu}>
+                  <NavLink
+                    to="/home"
+                    className={({ isActive }) => (isActive ? "activated" : "")}
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="hideLink" onClick={hideMenu}>
+                  <NavLink
+                    to="/programming"
+                    className={({ isActive }) => (isActive ? "activated" : "")}
+                  >
+                    Programming
+                  </NavLink>
+                </li>
+                <li className="hideLink" onClick={hideMenu}>
+                  <NavLink
+                    to="/animation"
+                    className={({ isActive }) => (isActive ? "activated" : "")}
+                  >
+                    Animation
+                  </NavLink>
+                </li>
+                <li className="hideLink" onClick={hideMenu}>
+                  <NavLink
+                    to="/illustration"
+                    className={({ isActive }) => (isActive ? "activated" : "")}
+                  >
+                    Illustration
+                  </NavLink>
+                </li>
+                <li className="hideLink" onClick={hideMenu}>
+                  <NavLink
+                    to="/3dmodeling"
+                    className={({ isActive }) => (isActive ? "activated" : "")}
+                  >
+                    3D
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
+          )}
         </header>
         <section>
           <Routes>
