@@ -24,7 +24,8 @@ export default function Menu() {
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const threshold = 10; // adjust as needed
-
+    const menu_toggle = document.querySelector(".x-Btn");
+    menu_toggle.classList.remove("active");
     setShowMenu(scrollTop <= threshold);
   };
 

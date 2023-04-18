@@ -12,13 +12,12 @@ export default function Home() {
     <>
       <section className="home">
         <p>
-          I am passionate about bringing my <span>creations </span> and{" "}
-          <span> designs to life</span>, and 
-          <span> programming</span> is the key to making that happen. By using
-          code to connect my <span> ideas</span> with real-world{" "}
-          <span> interaction</span>, I can build dynamic, engaging experiences
-          that resonate with people. Programming allows me to harness the power
-          of technology to create something truly meaningful and impactful.
+          I'm passionate about bringing my <span> designs to life</span>,
+          through
+          <span> programming</span>. By using code to connect my{" "}
+          <span> ideas</span> with the real world, I can create{" "}
+          <span>dynamic</span> and <span>engaging </span> experiences that have
+          a <span>meaningful </span> impact on people's lives."
         </p>
         <div className="gaussianOne"></div>
         <div id="letsTalk" className="letsTalk">
