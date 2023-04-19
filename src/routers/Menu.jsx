@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, HashRouter } from "react-router-dom";
-import Animation from "../components/Animation";
-import Home from "../components/Home";
-import Illustration from "../components/Illustration";
-import Modeling3d from "../components/Modeling3d";
-import Programming from "../components/Programming";
-import Login from "../components/Login";
+
 import AnimatedRoutes from "../components/AnimatedRoutes";
 
 export default function Menu() {

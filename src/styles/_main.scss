@@ -457,6 +457,10 @@ header {
     font-family: var(--textBlack);
     text-decoration: none;
     color: var(--colour-red);
+    transition: .25s;
+  }
+  &:hover {
+    letter-spacing: 1px;
   }
 }
 
@@ -470,7 +474,7 @@ header {
   align-items: center;
   .bx {
     transition: 0.25s;
-    font-size: 52px;
+    font-size: 32px;
     color: var(--colour-yellow);
     &:hover {
       transform: scale(1.1) translateY(-5px);
