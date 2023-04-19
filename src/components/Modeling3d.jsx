@@ -1,9 +1,14 @@
 import React from "react";
 import { modelingCards } from "../api/modelingCards";
+import { motion } from "framer-motion";
 
 export default function Modeling3d() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition:{duration:.3} }}
+    >
       <section className="containerModelingCards">
         <div className="cardBoxModeling">
           <div className="slideCard">
@@ -26,6 +31,6 @@ export default function Modeling3d() {
           return <img src={itemModeling.image} alt="" key={itemModeling.id} />;
         })}
       </section>
-    </>
+    </motion.div>
   );
 }

@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
-import {
-  Routes,
-  Route,
-  NavLink,
-  BrowserRouter,
-  HashRouter,
-} from "react-router-dom";
+import { NavLink, HashRouter } from "react-router-dom";
 import Animation from "../components/Animation";
 import Home from "../components/Home";
 import Illustration from "../components/Illustration";
 import Modeling3d from "../components/Modeling3d";
 import Programming from "../components/Programming";
 import Login from "../components/Login";
+import AnimatedRoutes from "../components/AnimatedRoutes";
 
 export default function Menu() {
   const [showMenu, setShowMenu] = useState(true);
@@ -102,17 +97,7 @@ export default function Menu() {
           )}
         </header>
         <section>
-          <Routes>
-            <Route>
-              <Route path="/" exact element={<Home />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/programming" element={<Programming />} />
-              <Route path="/animation" element={<Animation />} />
-              <Route path="/illustration" element={<Illustration />} />
-              <Route path="/3dmodeling" element={<Modeling3d />} />
-              <Route path="/register" element={<Login />} />
-            </Route>
-          </Routes>
+          <AnimatedRoutes />
         </section>
       </HashRouter>
     </>

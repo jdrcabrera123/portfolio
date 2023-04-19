@@ -4,12 +4,17 @@ import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import ProgrammingUxUi from "./ProgrammingUxUi";
 import { HashLink as Link } from "react-router-hash-link";
+import { motion } from "framer-motion";
 
 // import { links } from "../api/links";
 
 export default function Home() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.3 } }}
+    >
       <section className="home">
         <p>
           I'm passionate about bringing my <span> designs to life</span>,
@@ -36,6 +41,6 @@ export default function Home() {
       </div>
 
       <Footer />
-    </>
+    </motion.div>
   );
 }
