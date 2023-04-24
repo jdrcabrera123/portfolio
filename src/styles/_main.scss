@@ -13,7 +13,7 @@
   --colour-yellow: #fef928;
   --colour-black: #231718;
   --colour-blue: #1b2189;
-  --colour-bgTextArea: #f2f2f2;
+  --colour-bgTextArea: #fefefe;
   --colour-menu: rgba(53, 17, 88, 1);
   --colour-menu-hover: #020425;
   --textBlack: textBlack;
@@ -35,7 +35,7 @@ p {
 //<<<<<<<<<<<<<<<<< Home Section>>>>>>>>>
 //---------------------- Menu
 header {
-  background-color: var(--colour-yellow);
+  // background-color: var(--colour-yellow);
   height: 82px;
   width: 100%;
   display: flex;
@@ -53,7 +53,7 @@ header {
     .x-Btn {
       width: 42px;
       height: 42px;
-      background-color: var(--colour-menu);
+      background-color: var(--colour-black);
       display: flex;
       flex-direction: column;
       padding: 15px 5px;
@@ -63,14 +63,14 @@ header {
         content: "";
         width: 32px;
         height: 2px;
-        background-color: var(--colour-yellow);
+        background-color: var(--colour-bgTextArea);
         transition: 0.25s;
       }
       &::before {
         content: "";
         width: 32px;
         height: 2px;
-        background-color: var(--colour-yellow);
+        background-color: var(--colour-bgTextArea);
         transform: translateY(12px);
         transition: 0.25s;
       }
@@ -102,14 +102,14 @@ header {
       transform: translateY(0%);
     }
     .menu {
-      background-color: var(--colour-yellow);
+      background-color: var(--colour-bgTextArea);
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       list-style: none;
-      font-family: "titles";
+      font-family: var(--textBlack);
       li {
         // background-color: green;
         height: 20%;
@@ -131,12 +131,12 @@ header {
 
           &:hover {
             background-color: var(--colour-menu-hover);
-            color: var(--colour-yellow);
+            color: var(--colour-bgTextArea);
             letter-spacing: 5px;
           }
           &.activated {
-            color: var(--colour-yellow);
-            background-color: var(--colour-menu);
+            color: var(--colour-bgTextArea);
+            background-color: var(--colour-black);
           }
         }
       }
@@ -146,10 +146,13 @@ header {
 
 //---------------------- Home area
 .home {
-  background: linear-gradient(
-    180deg,
-    rgba(53, 17, 88, 1) 13%,
-    rgba(2, 4, 37, 1) 100%
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f9f9f9,
+    #f3f3f3,
+    #ededed,
+    #e7e7e7
   );
   width: 100%;
   height: auto;
@@ -160,10 +163,10 @@ header {
   p {
     position: relative;
     z-index: 2;
-    color: white;
+    color: var(--colour-black);
     word-spacing: 5px;
     span {
-      color: var(--colour-yellow);
+      color: var(--colour-red);
       line-height: 24px;
     }
   }
@@ -176,11 +179,11 @@ header {
 
     a {
       text-decoration: none;
-      background-color: var(--colour-yellow);
+      background-color: var(--colour-black);
       padding: 5px 20px;
       font-size: 16px;
       font-family: var(--textBlack);
-      color: var(--colour-blue);
+      color: var(--colour-bgTextArea);
       position: relative;
       z-index: 5;
       transition: 0.25s;
@@ -192,9 +195,9 @@ header {
   .gaussianOne {
     width: 150px;
     height: 150px;
-    background-color: var(--colour-yellow);
+    background-color: var(--colour-red);
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
     top: 20px;
     right: 60px;
     filter: blur(60px);
@@ -210,6 +213,34 @@ header {
     }
     100% {
       transform: translate(0, 0);
+    }
+  }
+  .custom-shape-divider-bottom-1682370008 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1682370008 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 62px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1682370008 .shape-fill {
+    fill: #ffffff;
+  }
+
+  /** For mobile devices **/
+  @media (max-width: 767px) {
+    .custom-shape-divider-bottom-1682370008 svg {
+      width: calc(100% + 1.3px);
+      height: 46px;
     }
   }
 }
@@ -236,7 +267,7 @@ header {
       font-family: var(--textBlack);
       font-size: 28px;
       text-align: center;
-      color: var(--colour-menu);
+      color: var(--colour-black);
       line-height: 35px;
     }
     .boxMovement {
@@ -368,13 +399,38 @@ header {
   }
 }
 
+.custom-shape-divider-top-1682371163 {
+  position: absolute;
+  // top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
 //---------------------- Contact area
+.custom-shape-divider-top-1682371163 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 62px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1682371163 .shape-fill {
+  fill: white;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1682371163 svg {
+    width: calc(100% + 1.3px);
+    height: 46px;
+  }
+}
 .contactSection {
-  background: linear-gradient(
-    180deg,
-    rgba(53, 17, 88, 1) 13%,
-    rgba(2, 4, 37, 1) 100%
-  );
+  background-image: linear-gradient(to bottom, #e7e7e7, #ededed, #f3f3f3, #f9f9f9, #ffffff);
 }
 .contact {
   // background-color: var(--colour-yellow);
@@ -388,17 +444,17 @@ header {
   justify-content: space-evenly;
   align-items: end;
   text-align: right;
-  color: var(--colour-bgTextArea);
+  color: var(--colour-black);
   h1 {
     font-size: 35px;
-    color: var(--colour-yellow);
+    color: var(--colour-black);
     font-family: var(--textBlack);
     line-height: 45px;
   }
   p {
     span {
       font-family: var(--textBlack);
-      color: var(--colour-yellow);
+      color: var(--colour-red);
       line-height: 40px;
     }
   }
@@ -439,8 +495,8 @@ header {
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.462);
   }
   input[type="submit"] {
-    background-color: var(--colour-yellow);
-    color: var(--colour-blue);
+    background-color: var(--colour-black);
+    color: var(--colour-bgTextArea);
     font-family: var(--textBlack);
     font-size: 16px;
     letter-spacing: 2px;
@@ -457,7 +513,7 @@ header {
     font-family: var(--textBlack);
     text-decoration: none;
     color: var(--colour-red);
-    transition: .25s;
+    transition: 0.25s;
   }
   &:hover {
     letter-spacing: 1px;
@@ -468,14 +524,14 @@ header {
 .containerFooter {
   height: 100px;
   width: 100%;
-  background-color: var(--colour-menu-hover);
+  background-color: var(--colour-black);
   display: flex;
   justify-content: space-around;
   align-items: center;
   .bx {
     transition: 0.25s;
     font-size: 32px;
-    color: var(--colour-yellow);
+    color: var(--colour-bgTextArea);
     &:hover {
       transform: scale(1.1) translateY(-5px);
       cursor: pointer;
@@ -540,9 +596,9 @@ header {
       .btnWatch {
         width: 120px;
         height: 50px;
-        background-color: var(--colour-menu-hover);
+        background-color: var(--colour-black);
         border: none;
-        color: var(--colour-yellow);
+        color: var(--colour-bgTextArea);
         font-size: 20px;
         letter-spacing: 2px;
         transition: 0.25s;
@@ -553,7 +609,7 @@ header {
         }
         a {
           font-family: var(--textBlack);
-          color: var(--colour-yellow);
+          color: var(--colour-bgTextArea);
           text-decoration: none;
         }
       }
@@ -618,7 +674,7 @@ header {
       .btnWatch {
         width: 120px;
         height: 50px;
-        background-color: var(--colour-menu-hover);
+        background-color: var(--colour-black);
         border: none;
         font-size: 20px;
         letter-spacing: 2px;
@@ -630,7 +686,7 @@ header {
         }
         a {
           font-family: var(--textBlack);
-          color: var(--colour-yellow);
+          color: var(--colour-bgTextArea);
           text-decoration: none;
         }
       }
@@ -704,7 +760,7 @@ header {
       .btnWatch {
         width: 120px;
         height: 50px;
-        background-color: var(--colour-menu-hover);
+        background-color: var(--colour-black);
         border: none;
         font-size: 20px;
         letter-spacing: 2px;
@@ -716,7 +772,7 @@ header {
         }
         a {
           font-family: var(--textBlack);
-          color: var(--colour-yellow);
+          color: var(--colour-bgTextArea);
           text-decoration: none;
         }
       }
@@ -1051,11 +1107,7 @@ header {
     left: 35%;
   }
   .contactSection {
-    background: linear-gradient(
-      180deg,
-      rgba(53, 17, 88, 1) 13%,
-      rgba(2, 4, 37, 1) 100%
-    );
+    background-image: linear-gradient(to bottom, #e7e7e7, #ededed, #f3f3f3, #f9f9f9, #ffffff);
     display: flex;
     width: 100%;
     padding: 0 15%;
