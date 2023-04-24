@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import ProgrammingUxUi from "./ProgrammingUxUi";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
+import ContactUs from "./ContactUs";
 
 // import { links } from "../api/links";
 
@@ -65,7 +66,8 @@ export default function Home() {
         </svg>
       </div>
         <Contact />
-        <ContactForm />
+        {/* <ContactForm /> */}
+        <ContactUs/>
       </div>
 
       <Footer />
