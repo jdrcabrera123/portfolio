@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ContactUs() {
   const [fullname, setFullName] = useState("");
@@ -73,6 +74,7 @@ export default function ContactUs() {
         onChange={(e) => setRequirement(e.target.value)}
       />
       <input type="submit" value="Send" />
+      <Link to={"/register"} className="validateUser">Validate user</Link>
     </form>
   );
 }
