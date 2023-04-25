@@ -88,11 +88,11 @@ export const programmingCards = [
 
     },
     {
-        image: 'https://i.ibb.co/2ytMmQh/p1.png',
+        image: 'https://i.ibb.co/BfKV86Y/123.png',
         id: 12,
-        title: "Calculator",
-        description: "html, sass, js",
-        url: 'https://jdrcabrera123.github.io/calculator/'
+        title: "Movies",
+        description: "html, sass, js, React",
+        url: 'https://jdrcabrera123.github.io/movies/'
 
     }
 ]
