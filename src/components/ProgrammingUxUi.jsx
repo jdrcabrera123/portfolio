@@ -7,7 +7,7 @@ export default function ProgrammingUxUi() {
       <div className="textSection">
         <h1>
           Programming <br />
-          UX/UI
+          GAMES / UI
         </h1>
 
         <div className="boxMovement">

@@ -1,0 +1,58 @@
+export const programmingCards = [
+  {
+    id: 1,
+    image: "https://i.ibb.co/2dWytWh/12.png",
+    title: "Clothing site",
+    description: "html, sass, js",
+    url: "https://jdrcabrera123.github.io/sitesix/#",
+  },
+  {
+    image: "https://i.ibb.co/1sMdTKb/shoot-Them-All.png",
+    id: 2,
+    title: "Shoot Them All",
+    description: "C#, Unity, PC version",
+    url: "https://sharemygame.com/@TheCowow/shoot-them-all",
+  },
+  {
+    image: "https://i.ibb.co/sPS3XMr/Bladesh.png",
+    id: 3,
+    title: "Bladesh",
+    description: "C#, Unity, PC, mobile version",
+    url: "https://sharemygame.com/@TheCowow/bladesh",
+  },
+  {
+    image: "https://i.ibb.co/Lt7ps7p/Alfredito.png",
+    id: 4,
+    title: "Saving Alfredito",
+    description: "C#, Unity, mobile version",
+    url: "https://simmer.io/@TheCowow/saving-alfredito",
+  },
+  {
+    image: "https://i.ibb.co/564Jk8f/Icon-1.png",
+    id: 5,
+    title: "Bob the Box",
+    description: "C#, Unity, PC, mobile version",
+    url: "https://simmer.io/@TheCowow/bob-the-box",
+  },
+  {
+    image: "https://i.ibb.co/jMQy5KY/Asset-23.png",
+    id: 6,
+    title: "Ultra ping - Super pong",
+    description: "C#, Unity, PC, mobile version",
+    url: "https://simmer.io/@TheCowow/ultra-ping-super-pong",
+  },
+  {
+    image: "https://i.ibb.co/JtJTxFc/Asset-35.png",
+    id: 7,
+    title: "Menu test",
+    description: "C#, Unity, PC, mobile version",
+    url: "https://simmer.io/@TheCowow/jay-the-game",
+  },
+  {
+    image: "https://i.ibb.co/BfKV86Y/123.png",
+    id: 12,
+    title: "Movies",
+    description: "html, sass, js, React",
+    url: "https://jdrcabrera123.github.io/movies/",
+  },
+];
