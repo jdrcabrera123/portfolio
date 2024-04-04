@@ -71,14 +71,14 @@ export default function Menu() {
                     Animation
                   </NavLink>
                 </li>
-                <li className="hideLink" onClick={hideMenu}>
+                {/* <li className="hideLink" onClick={hideMenu}>
                   <NavLink
                     to="/illustration"
                     className={({ isActive }) => (isActive ? "activated" : "")}
                   >
                     Illustration
                   </NavLink>
-                </li>
+                </li> */}
                 <li className="hideLink" onClick={hideMenu}>
                   <NavLink
                     to="/3dmodeling"

@@ -1,5 +1,19 @@
 export const programmingCards = [
   {
+    id: 9,
+    image: "https://i.ibb.co/cJPmXdV/p9-01.png",
+    title: "Ecommerce",
+    description: "html, sass, React, js",
+    url: "https://jdrcabrera123.github.io/jobPortal/",
+  },
+  {
+    id: 8,
+    image: "https://i.ibb.co/GFtdBVF/p8-01.png",
+    title: "Ecommerce",
+    description: "html, sass, js",
+    url: "https://jdrcabrera123.github.io/testEcommerce/",
+  },
+  {
     id: 1,
     image: "https://i.ibb.co/2dWytWh/12.png",
     title: "Clothing site",
@@ -50,7 +64,7 @@ export const programmingCards = [
   },
   {
     image: "https://i.ibb.co/BfKV86Y/123.png",
-    id: 12,
+    id: 10,
     title: "Movies",
     description: "html, sass, js, React",
     url: "https://jdrcabrera123.github.io/movies/",
