@@ -1,8 +1,15 @@
 export const programmingCards = [
   {
+    id: 11,
+    image: "https://i.ibb.co/3Sp7RBJ/password-Generator.jpg",
+    title: "Password Generator",
+    description: "Tailwind, React, js",
+    url: "https://jdrcabrera123.github.io/passwordGenerator/",
+  },
+  {
     id: 9,
     image: "https://i.ibb.co/cJPmXdV/p9-01.png",
-    title: "Ecommerce",
+    title: "Job searcher",
     description: "html, sass, React, js",
     url: "https://jdrcabrera123.github.io/jobPortal/",
   },
