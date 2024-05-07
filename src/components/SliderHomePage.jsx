@@ -7,7 +7,7 @@ export default function SliderHomePage() {
         <div className="slideCard">
           <div className="imgIn"></div>
           <h2 className="titleCard">Portfolio</h2>
-          <p className="descriptionCard"> react, mongoDB, node</p>
+          <p className="descriptionCard"> React, C#, JS</p>
           <button className="btnWatch">
             <a href="">Watch</a>
           </button>
