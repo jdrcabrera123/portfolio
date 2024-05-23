@@ -1,5 +1,12 @@
 export const programmingCards = [
   {
+    id: 12,
+    image: "https://i.ibb.co/1M5vc5Q/dental-Products.png",
+    title: "MVP Dental Products",
+    description: "Figma",
+    url: "https://www.figma.com/design/8XoA8tRA9YzA9fxIPA5wym/Dental_Products-(Copy)?node-id=907%3A12765&t=sVEwbSPVfAGQ4hXs-1",
+  },
+  {
     id: 11,
     image: "https://i.ibb.co/3Sp7RBJ/password-Generator.jpg",
     title: "Password Generator",
