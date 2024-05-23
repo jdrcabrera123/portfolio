@@ -60,7 +60,7 @@ export default function Menu() {
                     to="/programming"
                     className={({ isActive }) => (isActive ? "activated" : "")}
                   >
-                    Programming
+                    Programming / UX
                   </NavLink>
                 </li>
                 <li className="hideLink" onClick={hideMenu}>
