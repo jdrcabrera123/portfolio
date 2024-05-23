@@ -1,5 +1,12 @@
 export const programmingCards = [
   {
+    id: 13,
+    image: "https://i.ibb.co/k0yrzNz/Boxing-Training.png",
+    title: "MVP Boxing Training",
+    description: "Unity",
+    url: "https://sidequestvr.com/app/29430/training-box-vr",
+  },
+  {
     id: 12,
     image: "https://i.ibb.co/1M5vc5Q/dental-Products.png",
     title: "MVP Dental Products",
